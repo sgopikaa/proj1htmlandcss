@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+  <meta charset="UTF-8" />
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant Menu</title>
+   
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>~Taste of World~</h1>
+      </header>
+
+    <div class="menu-form">
+        <section class="filters" aria-label="Menu Introduction">
+            <p>Explore a curated selection of flavorful dishes from around the world, including breakfast, lunch, and
+        dinner options. Each dish is prepared with authentic ingredients and careful attention to dietary preferences,
+        clearly marked for your convenience.</p>
+          </section>
+
+        <main>
+            <section aria-labelledby="breakfast-title">
+            <div class="section-divider" id="breakfast-title">Breakfast</div>
+                <div class="menu-grid">
+                    <article class="dish-card vegan" data-diet="vegan">
+                        <img src="dosa.jpg" alt="Masala Dosa" class="dish-img" />
+                        <h3 class="dish-title">Masala Dosa</h3>
+                        <p class="dish-price">₹120</p>
+                        <p class="dish-desc">Crispy rice crepe filled with spiced potatoes.</p>
+                        <div class="diet-icons" aria-label="Dietary Icons">
+                            <span class="diet-icon" title="Vegan">🌱</span>
+                            <span class="diet-icon" title="Gluten-Free">❌</span>
+                          </div>
+                        <p class="ingredients"><strong>Ingredients:</strong> Rice, potatoes, mustard seeds, turmeric,
+              curry leaves</p>
+                      </article>
+
+                    <article class="dish-card vegan gluten-free" data-diet="vegan gluten-free">
+                        <img src="idli.webp" alt="Idli" class="dish-img" />
+                        <h3 class="dish-title">Steamed Idli</h3>
+                        <p class="dish-price">₹80</p>
+                        <p class="dish-desc">Steamed rice and lentil cakes served with sambar.</p>
+                        <div class="diet-icons" aria-label="Dietary Icons">
+                            <span class="diet-icon" title="Vegan">🌱</span>
+                            <span class="diet-icon" title="Gluten-Free">🌿</span>
+                          </div>
+                        <p class="ingredients"><strong>Ingredients:</strong> Rice, lentils, mustard seeds, curry leaves,
+              tamarind</p>
+                      </article>
+
+                  </div>
+              </section>
+
+            <section aria-labelledby="lunch-title">
+                <div class="section-divider" id="lunch-title">Lunch</div>
+                <div class="menu-grid">
+
+                    <article class="dish-card gluten-free" data-diet="gluten-free">
+                        <img src="chick.jpg" alt="Butter Chicken" class="dish-img" />
+                        <h3 class="dish-title">Butter Chicken</h3>
+                        <p class="dish-price">₹350</p>
+                        <p class="dish-desc">Tender chicken simmered in buttery tomato gravy.</p>
+                        <div class="diet-icons" aria-label="Dietary Icons">
+                            <span class="diet-icon" title="Vegan">❌</span>
+                            <span class="diet-icon" title="Gluten-Free">🌿</span>
+                          </div>
+                        <p class="ingredients"><strong>Ingredients:</strong> Chicken, tomato, cream, butter, spices</p>
+                      </article>
+
+                    <article class="dish-card vegan" data-diet="vegan">
+                        <img src="bhatura.webp" alt="Chole Bhature" class="dish-img" />
+                        <h3 class="dish-title">Chole Bhature</h3>
+                        <p class="dish-price">₹180</p>
+                        <p class="dish-desc">Spiced chickpeas curry with fried bread.</p>
+                        <div class="diet-icons" aria-label="Dietary Icons">
+                            <span class="diet-icon" title="Vegan">🌱</span>
+                            <span class="diet-icon" title="Gluten-Free">❌</span>
+                          </div>
+                        <p class="ingredients"><strong>Ingredients:</strong> Chickpeas, flour, spices, oil</p>
+                      </article>
+
+                  </div>
+              </section>
+
+            <section aria-labelledby="dinner-title">
+                <div class="section-divider" id="dinner-title">Dinner</div>
+                <div class="menu-grid">
+
+                    <article class="dish-card gluten-free" data-diet="gluten-free">
+                        <img src="paneer.webp" alt="Paneer Tikka" class="dish-img" />
+                        <h3 class="dish-title">
+                            Paneer Tikka <span class="chef-badge" aria-label="Chef's Special">Chef's Special</span>
+                          </h3>
+                        <p class="dish-price">₹300</p>
+                        <p class="dish-desc">Grilled marinated cottage cheese cubes.</p>
+                        <div class="diet-icons" aria-label="Dietary Icons">
+                            <span class="diet-icon" title="Vegan">❌</span>
+                            <span class="diet-icon" title="Gluten-Free">🌿</span>
+                          </div>
+                        <p class="ingredients"><strong>Ingredients:</strong> Paneer, yogurt, spices, lemon, herbs</p>
+                      </article>
+
+                    <article class="dish-card gluten-free" data-diet="gluten-free">
+                        <img src="dal.jpg" alt="Dal Makhani" class="dish-img" />
+                        <h3 class="dish-title">Dal Makhani</h3>
+                        <p class="dish-price">₹250</p>
+                        <p class="dish-desc">Creamy black lentils slow-cooked with butter and spices.</p>
+                        <div class="diet-icons" aria-label="Dietary Icons">
+                            <span class="diet-icon" title="Vegan">❌</span>
+                            <span class="diet-icon" title="Gluten-Free">🌿</span>
+                          </div>
+                        <p class="ingredients"><strong>Ingredients:</strong> Black lentils, butter, cream, tomato,
+              spices</p>
+                      </article>
+
+                  </div>
+              </section>
+          </main>
+      </div>
+
+    <a href="order.html" class="order-btn" aria-label="Open Order Cart">
+        🛒 Order
+        <span class="cart-counter" aria-live="polite" aria-atomic="true">3</span>
+      </a>
+</body>
+
+</html>

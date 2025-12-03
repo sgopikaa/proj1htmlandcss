@@ -1,0 +1,100 @@
+/* === BASIC LAYOUT (minimal example) === */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+header {
+  background: #e67e22;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.filters {
+  padding: 1em;
+  background: #fff3e0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-divider {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+}
+
+.dish-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.dish-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.diet-icons {
+  margin: 0.5rem 0;
+}
+
+.chef-badge {
+  background: #ffcc00;
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.order-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #27ae60;
+  color: white;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  border-radius: 50px
+}
+/* Hide all dishes when a filter is active */
+input[name="diet"]:checked ~ main .dish-card {
+  display: none;
+}
+
+/* Show all dishes when 'All' is selected */
+#all:checked ~ main .dish-card {
+  display: block;
+}
+
+/* Show only vegan dishes */
+#vegan:checked ~ main .dish-card[data-diet*="vegan"] {
+  display: block;
+}
+
+/* Show only gluten-free dishes */
+#gf:checked ~ main .dish-card[data-diet*="gluten-free"] {
+  display: block;
+}

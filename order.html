@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Place Your Order</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+    }
+    select, input, textarea, button {
+      padding: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Place Your Order</h1>
+  </header>
+
+  <main>
+    <form action="thankyou.html" method="get">
+      <label for="dish">Select Dish:</label>
+      <select id="dish" name="dish" required>
+        <option value="">-- Choose an item --</option>
+        <option value="Masala Dosa">Masala Dosa - ₹120</option>
+        <option value="Steamed Idli">Steamed Idli - ₹80</option>
+        <option value="Butter Chicken">Butter Chicken - ₹350</option>
+        <option value="Chole Bhature">Chole Bhature - ₹180</option>
+        <option value="Paneer Tikka">Paneer Tikka - ₹300</option>
+        <option value="Dal Makhani">Dal Makhani - ₹250</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+
+      <label for="notes">Special Instructions:</label>
+      <textarea id="notes" name="notes" placeholder="Any preferences or allergies?"></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+</body>
+</html>
+
